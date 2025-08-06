@@ -1,20 +1,48 @@
+:root {
+    --primary: white;
+    --secondary: black;
+    --background-color: #013C84;
+}
+
+
+
 /* Warna Header */
 .main-header {
-    background-color: #013C84;
+    background-color: var(--background-color);
 }
 
 .main-header a {
-    color: white;
     background: none;
-}
-
-.main-header__title {
-    margin: auto !important;
 }
 
 .main-header__title span {
     background: none;
     font-size: 2rem;
+    color: var(--primary);
+}
+
+.page_index:not(.indexSite) .main-header__title {
+    text-align: center;
+    margin: 5vh auto 10vh auto;
+    max-width: 75vw;
+}
+
+.main-header__admin-link,
+.main-header__lang-link {
+    padding: 0.25em 0.5em;
+    margin-left: 0.5em;
+    background-color: transparent;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+
+/* Nav Links */
+.main-header__nav-link {
+    padding: 0.25em 0.5em;
+    background-color: transparent;
+    margin: 0 2vw;
+    color: var(--primary);
 }
 
 /* photo background */
@@ -53,8 +81,75 @@
     width: 100%;
 }
 
+
+
+/* Tombol */
+.article__btn {
+    margin-right: 2vw;
+    font-size: 0.875rem;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: #f9f9f9;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.article__btn:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.article__btn:active {
+    transform: scale(0.98);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--background-color);
+    color: var(--primary);
+}
+
+.main-footer a {
+    color: var(--primary);
+}
+
 .main-footer img {
     display: none;
+}
+
+/* Teks */
+.issue-desc a {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.main-header__title span {
+    display: inline;
+    padding: 0.5rem;
+    background: transparent;
+    line-height: 1.5;
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+p,
+li,
+blockquote,
+cite,
+dd {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
