@@ -2,6 +2,7 @@
     --primary: white;
     --secondary: black;
     --background-color: #013C84;
+    --link-text-color: whitesmoke;
 }
 
 
@@ -18,8 +19,11 @@
 .main-header__lang-link:focus,
 .main-header__admin-link:active,
 .main-header__lang-link:active {
-    color: whitesmoke;
-    background-color: transparent
+    color: var(--link-text-color);
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .main-header__title span {
