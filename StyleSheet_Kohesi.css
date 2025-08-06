@@ -1,6 +1,11 @@
+:root {
+    --primary: grey;
+    --secondary: black;
+    --background-color: whitesmoke;
+}
 /* Warna Header */
 .main-header {
-  background-color: whitesmoke;
+  background-color: var(--background-color);
 }
 
 .main-header__title {
@@ -22,6 +27,11 @@
   cursor: pointer;
 }
 
+.main-header__admin-link:hover,
+.main-header__lang-link {
+  background-color: transparent;
+}
+
 /* Nav Links */
 .main-header__nav-link {
   padding: 0.25em 0.5em;
@@ -29,9 +39,15 @@
   margin: 0 2vw;
 }
 
+.main-header__nav-link:hover {
+  background-color: transparent;
+  color: #999;
+}
+
 /* photo background */
 .issue {
-  background: url("");
+  background-size: cover;
+  background-image: url("https://ejournal.fahd39.com/public/site/images/adminjurnal/32028465.jpg");
 }
 
 .issue .container {
@@ -98,9 +114,30 @@
 }
 
 /* Teks */
-.issue-desc a {
+.issue-desc__title {
+  color: black;
+  margin-top: 0;
+}
+
+.issue-desc__content a {
   color: black;
   padding-left: 5px;
+}
+
+.issue-desc__content a:hover {
+  color: black;
+}
+
+.issue-desc__content a:after {
+  border-color: gray;
+}
+
+.issue-desc__content a .elipsis:after {
+  border-color: none;
+}
+
+a.ellipsis:after {
+  border-color: transparent;
 }
 
 .main-header__title span {
@@ -125,7 +162,25 @@ dd {
   color: #999;
 }
 
+/* Footer */
+.main-footer {
+    background-color: var(--background-color);
+    color: var(--primary);
+}
+
+.main-footer a {
+    color: var(--primary);
+}
+
+.main-footer img {
+    display: none;
+}
+
 @media (min-width: 768px) {
+  .issue {
+    background-size: contain;
+  }
+
   .offset-md-4 {
     margin-left: 0%;
     text-align: justify;
