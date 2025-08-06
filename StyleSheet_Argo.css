@@ -11,8 +11,15 @@
     background-color: var(--background-color);
 }
 
-.main-header a {
-    background: none;
+
+.main-header__admin-link:hover,
+.main-header__lang-link:hover,
+.main-header__admin-link:focus,
+.main-header__lang-link:focus,
+.main-header__admin-link:active,
+.main-header__lang-link:active {
+    color: whitesmoke;
+    background-color: transparent
 }
 
 .main-header__title span {
@@ -47,7 +54,7 @@
 
 /* photo background */
 .issue {
-    background-size: contain;
+    background-size: cover;
     background-image: url('https://ejournal.fahd39.com/public/site/images/adminjurnal/background-1.png');
 }
 
@@ -153,6 +160,11 @@ dd {
 }
 
 @media (min-width: 768px) {
+
+    .issue {
+        background-size: contain;
+    }
+
     .offset-md-4 {
         margin-left: 0%;
         text-align: justify;
