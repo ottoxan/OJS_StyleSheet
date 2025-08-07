@@ -1,16 +1,14 @@
 :root {
-    --primary: white;
-    --secondary: black;
-    --background-color: #013C84;
-    --link-text-color: whitesmoke;
-    --sub-text: #535353;
+  --primary: white;
+  --secondary: black;
+  --background-color: #013c84;
+  --link-text-color: whitesmoke;
+  --sub-text: #535353;
 }
-
-
 
 /* Warna Header */
 .main-header {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 /* Admin link button */
@@ -20,157 +18,152 @@
 .main-header__lang-link:focus,
 .main-header__admin-link:active,
 .main-header__lang-link:active {
-    color: var(--link-text-color);
-    background-color: transparent;
-    border-radius: 10px;
-    border-color: var(--primary);
-    border: 1px solid var(--primary);
+  color: var(--link-text-color);
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .main-header__title span {
-    background: none;
-    font-size: 2rem;
-    color: var(--primary);
+  background: none;
+  font-size: 2rem;
+  color: var(--primary);
 }
 
 .page_index:not(.indexSite) .main-header__title {
-    text-align: center;
-    margin: 5vh auto 10vh auto;
-    max-width: 75vw;
+  text-align: center;
+  margin: 5vh auto 10vh auto;
+  max-width: 75vw;
 }
 
 .main-header__admin-link,
 .main-header__lang-link {
-    padding: 0.25em 0.5em;
-    margin-left: 0.5em;
-    background-color: transparent;
-    color: var(--primary);
-    cursor: pointer;
+  padding: 0.25em 0.5em;
+  margin-left: 0.5em;
+  background-color: transparent;
+  color: var(--primary);
+  cursor: pointer;
 }
-
 
 /* Nav Links */
 .main-header__nav-link {
-    padding: 0.25em 0.5em;
-    background-color: transparent;
-    margin: 0 2vw;
-    color: var(--primary);
+  padding: 0.25em 0.5em;
+  background-color: transparent;
+  margin: 0 2vw;
+  color: var(--primary);
 }
 
 /* photo background */
 .issue {
-    background-size: cover;
-    background-image: url('https://ejournal.fahd39.com/public/site/images/adminjurnal/background-1.png');
+  background-size: cover;
+  background-image: url("https://ejournal.fahd39.com/public/site/images/adminjurnal/background-1.png");
 }
 
 .issue .container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .issue-desc__content {
-    text-align: justify;
+  text-align: justify;
 }
 
 .issue__title {
-    text-align: center;
-    color: var(--primary);
+  text-align: center;
+  color: var(--primary);
 }
 
 .issue__meta {
-    text-align: center;
+  text-align: center;
 }
 
 .issue-desc {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .offset-md-4 {
-    margin-left: 0%;
-    text-align: justify;
-    width: 100%;
+  margin-left: 0%;
+  text-align: justify;
+  width: 100%;
 }
-
-
 
 /* Tombol */
 .article__btn {
-    margin-right: 2vw;
-    font-size: 0.875rem;
-    padding: 10px 25px;
-    border-radius: 8px;
-    border: 1px solid #000;
-    color: #000;
-    background-color: #f9f9f9;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    font-weight: 600;
-    cursor: pointer;
-    letter-spacing: 0.5px;
+  margin-right: 2vw;
+  font-size: 0.875rem;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  color: #000;
+  background-color: #f9f9f9;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
 }
 
 .article__btn:hover {
-    background-color: #000;
-    color: #fff;
-    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+  background-color: #000;
+  color: #fff;
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .article__btn:active {
-    transform: scale(0.98);
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.98);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* Teks */
 .issue__header p {
-    color: lightgrey;
+  color: lightgrey;
 }
 
 .issue-desc__title {
-    color: var(--primary);
-    margin-top: 0;
+  color: var(--primary);
+  margin-top: 0;
 }
 
 .issue-desc__content a {
-    color: lightgray;
-    padding-left: 5px;
+  color: lightgray;
+  padding-left: 5px;
 }
 
 .issue-desc__content p {
-    color: var(--primary);
-    padding-left: 5px;
+  color: var(--primary);
+  padding-left: 5px;
 }
 
 .issue-desc__content a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .issue-desc__content a:after {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .issue-desc__content a .elipsis:after {
-    border-color: none;
+  border-color: none;
 }
 
 a.ellipsis:after {
-    border-color: transparent;
+  border-color: transparent;
 }
 
 .main-header__title span {
-    display: inline;
-    padding: 0.5rem;
-    background: transparent;
-    line-height: 1.5;
-    font-family: "Spectral", serif;
-    font-weight: 700;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+  display: inline;
+  padding: 0.5rem;
+  background: transparent;
+  line-height: 1.5;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 p,
@@ -178,53 +171,50 @@ li,
 blockquote,
 cite,
 dd {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-    color: #535353;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color: #535353;
 }
 
 /* Footer */
 .main-footer {
-    background-color: var(--background-color);
-    color: var(--primary);
+  background-color: var(--background-color);
+  color: var(--primary);
 }
 
 .main-footer a {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .main-footer p {
-    margin-bottom: 5px;
-    color: var(--primary)
+  margin-bottom: 5px;
+  color: var(--primary);
 }
 
-img.img-fluid {
-    display: none;
+.main-footer img.img-fluid {
+  display: none;
 }
 
 /* Index img */
 .hover13 img {
-    border-radius: 10px;
-    max-width: none;
-    height: revert-layer;
+  border-radius: 10px;
+  max-width: none;
+  height: revert-layer;
 }
 
 .hover13 img:hover {
-    border: 5px dotted #4682b4;
+  border: 5px dotted #4682b4;
 }
 
-
-
 @media (min-width: 768px) {
+  .issue {
+    background-size: contain;
+  }
 
-    .issue {
-        background-size: contain;
-    }
-
-    .offset-md-4 {
-        margin-left: 0%;
-        text-align: justify;
-        width: 100%;
-    }
+  .offset-md-4 {
+    margin-left: 0%;
+    text-align: justify;
+    width: 100%;
+  }
 }
