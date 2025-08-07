@@ -2,6 +2,7 @@
   --primary: white;
   --secondary: black;
   --background-color: #925d01;
+  --sub-text:#535353;
 }
 /* Warna Header */
 .main-header {
@@ -42,7 +43,7 @@
 
 .main-header__nav-link:hover {
   background-color: transparent;
-  color: #999;
+  color: lightgray;
 }
 
 /* photo background */
@@ -169,7 +170,7 @@ dd {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   margin-bottom: 1.25rem;
-  color: #535353;
+  color: var(--sub-text)
 }
 
 /* Footer */
