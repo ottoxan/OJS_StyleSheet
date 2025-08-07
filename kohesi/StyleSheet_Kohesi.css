@@ -1,7 +1,7 @@
 :root {
-    --primary: grey;
-    --secondary: black;
-    --background-color: whitesmoke;
+  --primary: white;
+  --secondary: black;
+  --background-color: #925d01;
 }
 /* Warna Header */
 .main-header {
@@ -23,7 +23,7 @@
   padding: 0.25em 0.5em;
   margin-left: 0.5em;
   background-color: transparent;
-  color: #999;
+  color: var(--primary);
   cursor: pointer;
 }
 
@@ -34,6 +34,7 @@
 
 /* Nav Links */
 .main-header__nav-link {
+  color: var(--primary);
   padding: 0.25em 0.5em;
   background-color: transparent;
   margin: 0 2vw;
@@ -47,7 +48,7 @@
 /* photo background */
 .issue {
   background-size: cover;
-  background-image: url("https://ejournal.fahd39.com/public/site/images/adminjurnal/32028465.jpg");
+  background-image: url("http://localhost/journal.cib.institute/public/site/images/adminjurnal/bg.png");
 }
 
 .issue .container {
@@ -63,7 +64,7 @@
 
 .issue__title {
   text-align: center;
-  color: black;
+  color: var(--primary);
 }
 
 .issue__meta {
@@ -114,22 +115,31 @@
 }
 
 /* Teks */
+.issue__header p {
+  color: lightgrey;
+}
+
 .issue-desc__title {
-  color: black;
+  color: var(--primary);
   margin-top: 0;
 }
 
 .issue-desc__content a {
-  color: black;
+  color: lightgray;
+  padding-left: 5px;
+}
+
+.issue-desc__content p {
+  color: var(--primary);
   padding-left: 5px;
 }
 
 .issue-desc__content a:hover {
-  color: black;
+  color: var(--primary);
 }
 
 .issue-desc__content a:after {
-  border-color: gray;
+  color: var(--primary);
 }
 
 .issue-desc__content a .elipsis:after {
@@ -159,21 +169,26 @@ dd {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   margin-bottom: 1.25rem;
-  color: #999;
+  color: #535353;
 }
 
 /* Footer */
 .main-footer {
-    background-color: var(--background-color);
-    color: var(--primary);
+  background-color: var(--background-color);
+  color: var(--primary);
 }
 
 .main-footer a {
-    color: var(--primary);
+  color: var(--primary);
+}
+
+.main-footer p {
+    margin-bottom: 5px;
+    color: var(--primary)
 }
 
 .main-footer img {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
