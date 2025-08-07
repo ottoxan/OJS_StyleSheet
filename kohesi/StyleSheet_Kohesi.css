@@ -188,10 +188,6 @@ dd {
     color: var(--primary)
 }
 
-.main-footer img {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .issue {
     background-size: contain;
