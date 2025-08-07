@@ -184,7 +184,7 @@ dd {
     color: var(--primary)
 }
 
-img.img-fluid {
+.main-footer img.img-fluid {
   display: none;
 }
 
