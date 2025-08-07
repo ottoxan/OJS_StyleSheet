@@ -12,7 +12,7 @@
     background-color: var(--background-color);
 }
 
-
+/* Admin link button */
 .main-header__admin-link:hover,
 .main-header__lang-link:hover,
 .main-header__admin-link:focus,
@@ -132,9 +132,18 @@
     color: var(--primary);
 }
 
-.main-footer img {
-    display: none;
+/* Index img */
+.hover13 img {
+    border-radius: 10px;
+    max-width: none;
+    height: revert-layer;
 }
+
+.hover13 img:hover {
+    border: 5px dotted #4682b4;
+}
+
+
 
 /* Teks */
 .issue-desc a {
