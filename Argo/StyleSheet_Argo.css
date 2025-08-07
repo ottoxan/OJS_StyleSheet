@@ -3,6 +3,7 @@
     --secondary: black;
     --background-color: #013C84;
     --link-text-color: whitesmoke;
+    --sub-text: #535353;
 }
 
 
@@ -75,6 +76,7 @@
 
 .issue__title {
     text-align: center;
+    color: var(--primary);
 }
 
 .issue__meta {
@@ -122,33 +124,42 @@
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
-.main-footer {
-    background-color: var(--background-color);
-    color: var(--primary);
-}
-
-.main-footer a {
-    color: var(--primary);
-}
-
-/* Index img */
-.hover13 img {
-    border-radius: 10px;
-    max-width: none;
-    height: revert-layer;
-}
-
-.hover13 img:hover {
-    border: 5px dotted #4682b4;
-}
-
 
 
 /* Teks */
-.issue-desc a {
+.issue__header p {
+    color: lightgrey;
+}
+
+.issue-desc__title {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.issue-desc__content a {
+    color: lightgray;
+    padding-left: 5px;
+}
+
+.issue-desc__content p {
     color: var(--primary);
     padding-left: 5px;
+}
+
+.issue-desc__content a:hover {
+    color: var(--primary);
+}
+
+.issue-desc__content a:after {
+    color: var(--primary);
+}
+
+.issue-desc__content a .elipsis:after {
+    border-color: none;
+}
+
+a.ellipsis:after {
+    border-color: transparent;
 }
 
 .main-header__title span {
@@ -170,7 +181,40 @@ dd {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     margin-bottom: 1.25rem;
+    color: #535353;
 }
+
+/* Footer */
+.main-footer {
+    background-color: var(--background-color);
+    color: var(--primary);
+}
+
+.main-footer a {
+    color: var(--primary);
+}
+
+.main-footer p {
+    margin-bottom: 5px;
+    color: var(--primary)
+}
+
+img.img-fluid {
+    display: none;
+}
+
+/* Index img */
+.hover13 img {
+    border-radius: 10px;
+    max-width: none;
+    height: revert-layer;
+}
+
+.hover13 img:hover {
+    border: 5px dotted #4682b4;
+}
+
+
 
 @media (min-width: 768px) {
 
