@@ -188,6 +188,25 @@ dd {
     color: var(--primary)
 }
 
+img.img-fluid {
+  display: none;
+}
+
+/* Index img */
+.hover13 img {
+  border-radius: 10px;
+  max-width: none;
+  height: revert-layer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hover13 img:hover {
+  border: 5px dotted #4682b4;
+}
+
 @media (min-width: 768px) {
   .issue {
     background-size: contain;
