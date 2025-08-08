@@ -51,6 +51,33 @@
   color: var(--tertiary);
 }
 
+/* Container dropdown */
+#navigationPrimary .dropdown-menu.show {
+  background-color: var(--tertiary);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Item didalam dropdown */
+#navigationPrimary .dropdown-item a {
+  color: var(--secondary);
+  border: none;
+}
+
+#navigationPrimary .dropdown-item:hover,
+#navigationPrimary .dropdown-item:focus,
+#navigationPrimary .dropdown-item:active,
+#navigationPrimary .dropdown-item a:hover,
+#navigationPrimary .dropdown-item a:focus,
+#navigationPrimary .dropdown-item a:active {
+  background-color: transparent;
+  border: none;
+  color: var(--background-color);
+}
+
 /* photo background */
 .issue {
   background-size: cover;
