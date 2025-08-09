@@ -257,6 +257,7 @@ dd {
 /* ISSN */
 .issn-item {
   background-color: var(--primary);
+  border: 2px solid var(--tertiary);
   max-width: 100%;
   height: auto;
   border-radius: 8px;

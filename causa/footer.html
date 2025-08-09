@@ -1,0 +1,253 @@
+<head>
+  <style>
+    /* Footer Container Styling */
+    .footer {
+      background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+      padding: 40px 20px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Grid Layout */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Title Styling */
+    .footer .title {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .footer .title:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background: #f39c12;
+    }
+
+    /* Box Styling */
+    .footer-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease;
+    }
+
+    .footer-box:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Image Link Styling */
+    .footer a img {
+      transition: all 0.3s ease;
+      margin: 8px 0;
+      border-radius: 6px;
+      max-width: 100%;
+      filter: grayscale(20%);
+    }
+
+    .footer a:hover img {
+      transform: scale(1.03);
+      filter: grayscale(0%);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Index Container Specific */
+    .footer .index-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .footer .index-container img {
+  max-width: 100%;
+  max-height: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+    /* Map Container Specific */
+    .footer .map-container iframe {
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      min-height: 200px;
+    }
+
+    /* Contact Info Styling */
+    .footer p {
+      margin: 8px 0;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .footer p:last-child {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer .title {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<div class="footer">
+  <div class="footer-grid">
+    <!-- Issn -->
+    <div class="footer-box">
+    <h2 class="title">ISSN</h2>
+
+    <div class="issn-container">
+      <div class="issn-item">
+        <a href="https://issn.brin.go.id/terbit/detail/20230924041108920">
+          <img
+            src="https://ejournal.warunayama.org/public/site/images/adminsuper/issn-musytari.png"
+            alt="ISSN Musytari"
+            width="206"
+            height="90"
+          />
+        </a>
+      </div>
+    </div>
+</div>
+
+    <!-- Index -->
+    <div class="footer-box">
+    <h2 class="title">Indexed In</h2>
+
+    <div class="index-container">
+      <a
+        href="https://journals.indexcopernicus.com/search/details?id=129425&amp;lang=en"
+      >
+        <img
+          src="http://localhost/journal.cib.institute/public/site/images/adminjurnal/copernicus.png"
+          alt="Index Copernicus"
+          width="222"
+          height="77"
+        />
+      </a>
+      <a
+        href="http://localhost/journal.cib.institute/public/site/images/adminjurnal/scholar.png"
+      >
+        <img
+          src="http://localhost/journal.cib.institute/public/site/images/adminjurnal/scholar.png"
+          alt="Google Scholar"
+          width="222"
+          height="77"
+        />
+      </a>
+      <a href="https://garuda.kemdikbud.go.id/journal/view/33775">
+        <img
+          src="http://localhost/journal.cib.institute/public/site/images/adminjurnal/garuda-e587d0d1d3423fe9f478cbbf52690747.png"
+          alt="Garuda"
+          width="222"
+          height="77"
+        />
+      </a>
+    </div>
+</div>
+
+    <!-- Tools -->
+    <div class="footer-box">
+    <h2 class="title">Tools</h2>
+
+    <div class="tools-container">
+      <p>
+        <a href="https://www.turnitin.id/"
+          ><img
+            src="https://ejournal.warunayama.org/public/site/images/adminsuper/turnitin-14a04d20f4bded834023dd836a6b671b.jpg"
+            alt=""
+            width="237"
+            height="88"
+        /></a>
+      </p>
+      <p>
+        <a href="https://www.mendeley.com/"
+          ><img
+            src="https://ejournal.warunayama.org/public/site/images/adminsuper/citefactor---copy-c932b8b54d5e19c3c0c74da56d194e08.png"
+            alt=""
+            width="237"
+            height="53"
+        /></a>
+      </p>
+    </div>
+</div>
+
+    <!-- Map -->
+    <div class="footer-box">
+    <h2 class="title">Visit Cahaya Ilmu Bangsa</h2>
+
+    <div class="map-container">
+      <iframe
+        style="border: 0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6043243932613!2d112.64004207474204!3d-8.039665291987344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd627559582d893%3A0x822db263ee8cd258!2sCahaya%20Ilmu%20Bangsa!5e0!3m2!1sen!2sid!4v1750242073591!5m2!1sen!2sid"
+        width="300"
+        height="200"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+</div>
+
+    <!-- Flag Viewer -->
+    <div class="footer-box">
+    <h2 class="title">Flag Viewer</h2>
+
+    <div class="flag-container">
+      <a href="https://info.flagcounter.com/OVdZ">
+        <img
+          src="https://s11.flagcounter.com/countxl/OVdZ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+          alt="Flag Counter"
+          width="237"
+          height="188"
+          border="0"
+        />
+      </a>
+    </div>
+</div>
+
+  </div>
+  <hr>
+  <div class="footer-bottom">
+  <p>Cahaya Ilmu Bangsa Institute</p>
+  <p>SK KEMENKUMHAM AHU-0018912-AH.01.14</p>
+  <p>e-mail : <u>cahayailmubangsa</u><u>@gmail.com</u></p>
+  <p>085859888365</p>
+</div>
+</div>
