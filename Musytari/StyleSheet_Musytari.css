@@ -354,13 +354,17 @@ main.page.page_issue_archive,
   padding: 50px 12%;
 }
 
+.navigation-item-content h1 {
+  margin-top: 20px;
+}
+
 .article_header_wrapper .row {
     min-height: 60px;
-    display: flex;              /* Tambahkan flex agar proporsional */
-    align-items: center;        /* Vertikal rata tengah */
-    flex-wrap: wrap;            /* Responsif jika sempit */
-    gap: 10px;                  /* Jarak antar kolom */
-    justify-content: space-between; /* Kolom kiri-kanan proporsional */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
   }
 
   .article_header_wrapper .row .col-md-8,
