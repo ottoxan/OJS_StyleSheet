@@ -200,6 +200,10 @@ a {
   min-height: 1850px;
 }
 
+.pkp_navigation_primary {
+  max-width: 100%;
+}
+
 .description p {
   text-align: justify;
 }
@@ -340,7 +344,7 @@ a {
   transform: translateX(-50%);
   width: 50%;
   height: 3px;
-  background: linear-gradient(90deg, #3498db, #9b59b6);
+  background: linear-gradient(90deg, var(--background-color), var(--accent-dark));
   border-radius: 3px;
 }
 

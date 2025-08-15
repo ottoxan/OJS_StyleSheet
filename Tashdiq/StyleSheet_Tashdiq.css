@@ -46,8 +46,8 @@ a {
 }
 
 .btn {
-    border: 1px solid var(--tertiary-light);
-    color: var(--tertiary-light);
+  border: 1px solid var(--tertiary-light);
+  color: var(--tertiary-light);
 }
 
 .btn:hover,
@@ -55,6 +55,10 @@ a {
 .btn:active {
   border-color: var(--background-color);
   color: var(--background-color);
+}
+
+.modal-content {
+  background-color: var(--background-color);
 }
 
 .modal-content .close {
@@ -77,9 +81,9 @@ a {
 .modal-content .btn-primary:hover,
 .modal-content .btn-primary:focus,
 .modal-content .btn-primary:active {
-  background: var(--primary-dark)!important;
-  border-color: var(--primary-dark)!important;
-  color: var(--background-color)!important;
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  color: var(--background-color) !important;
 }
 
 .form-text {
@@ -136,8 +140,10 @@ span.navbar-logo-text:active {
   -o-border-radius: 6px;
 }
 
-#userNav .nav-link, .language-toggle .dropdown-toggle,
-#primaryNav .nav-link, #primaryNav .dropdown-item {
+#userNav .nav-link,
+.language-toggle .dropdown-toggle,
+#primaryNav .nav-link,
+#primaryNav .dropdown-item {
   border-radius: 6px;
 }
 
@@ -226,8 +232,12 @@ span.navbar-logo-text:active {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: var(--background-color-dark)!important;
-  border-color: var(--background-color-dark)!important;
+  background: var(--background-color-dark) !important;
+  border-color: var(--background-color-dark) !important;
+}
+
+.issue-summary {
+  background: none;
 }
 /* === END OF BODY === */
 
@@ -263,6 +273,12 @@ span.navbar-logo-text:active {
 
 .issn-item:hover {
   transform: scale(1.05);
+}
+
+.issn-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Custom block containers */
@@ -356,7 +372,11 @@ span.navbar-logo-text:active {
   .homepage-issue-description-wrapper {
     background: var(--primary-dark);
   }
+
   .homepage-issue-description:after {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), var(--primary-dark) 20%);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      var(--primary-dark) 20%
+    );
   }
 }

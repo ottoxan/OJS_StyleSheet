@@ -1,0 +1,68 @@
+/* ==ADDITIONAL PAGE== */
+/* Wrapper utama */
+.fee-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  background: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--tertiary-light);
+}
+
+/* Judul halaman */
+.fee-container h2 {
+  text-align: center;
+  color: var(--background-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Daftar biaya */
+.fee-list p {
+  background: var(--primary-light);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 6px;
+  border-left: 4px solid var(--background-color);
+}
+
+/* Biaya penting */
+.fee-list p strong {
+  color: #b22222;
+  font-size: 1.05rem;
+}
+
+/* Deskripsi */
+.fee-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: var(--primary-dark);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+/* Gambar */
+.fee-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .fee-container {
+    padding: 1rem;
+  }
+  .fee-container h2 {
+    font-size: 1.5rem;
+  }
+  .fee-list p {
+    font-size: 0.9rem;
+  }
+}
+/* == END OF ADDITIONAL PAGE== */
