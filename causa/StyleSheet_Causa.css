@@ -26,7 +26,7 @@ body {
 
 /* Header */
 .bg-slate-900 {
-  background-image: url("http://localhost/journal.cib.institute/public/site/images/adminjurnal/causa-bg.png");
+  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/causa-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -66,6 +66,10 @@ svg.w-12.h-12.text-sky-400 {
 
 .text-sky-400 {
   color: var(--primary);
+}
+
+a.title.text-sky-400 {
+  color: var(--sub-text);
 }
 
 /* Button */
@@ -149,6 +153,18 @@ img.aspect-square.lg\:aspect-auto.w-full.border.border-slate-100.dark\:border-sl
 
 h2.title.pkp_screen_reader {
   color: var(--secondary);
+}
+
+.flex.md\:space-x-4 .flex-1 .flex.space-x-2 {
+    justify-content: space-between;
+}
+
+ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 {
+  justify-content: end;
+}
+
+.flex.md\:space-x-4 {
+  width: 100%;
 }
 /* End of Body */
 
@@ -334,6 +350,75 @@ h2.title.pkp_screen_reader {
 .footer .text-sm {
   display: none;
 }
+
+/* ==ADDITIONAL PAGE== */
+/* Wrapper utama */
+.fee-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  background: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--tertiary-light);
+}
+
+/* Judul halaman */
+.fee-container h2 {
+  text-align: center;
+  color: var(--background-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Daftar biaya */
+.fee-list p {
+  background: var(--primary-light);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 6px;
+  border-left: 4px solid var(--background-color);
+}
+
+/* Biaya penting */
+.fee-list p strong {
+  color: #b22222;
+  font-size: 1.05rem;
+}
+
+/* Deskripsi */
+.fee-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: var(--primary-dark);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+/* Gambar */
+.fee-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .fee-container {
+    padding: 1rem;
+  }
+  .fee-container h2 {
+    font-size: 1.5rem;
+  }
+  .fee-list p {
+    font-size: 0.9rem;
+  }
+}
+/* == END OF ADDITIONAL PAGE== */
 
 /* Responsive Design */
 @media (max-width: 1023px) {
