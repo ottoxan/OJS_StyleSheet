@@ -1,220 +1,486 @@
-:root {
-  --primary: white;
-  --secondary: black;
-  --background-color: #013c84;
-  --link-text-color: whitesmoke;
-  --sub-text: #535353;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-/* Warna Header */
-.main-header {
-  background-color: var(--background-color);
-}
-
-/* Admin link button */
-.main-header__admin-link:hover,
-.main-header__lang-link:hover,
-.main-header__admin-link:focus,
-.main-header__lang-link:focus,
-.main-header__admin-link:active,
-.main-header__lang-link:active {
-  color: var(--link-text-color);
-  background-color: transparent;
-  border-radius: 10px;
-  border-color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
-.main-header__title span {
-  background: none;
-  font-size: 2rem;
-  color: var(--primary);
-}
-
-.page_index:not(.indexSite) .main-header__title {
-  text-align: center;
-  margin: 5vh auto 10vh auto;
-  max-width: 75vw;
-}
-
-.main-header__admin-link,
-.main-header__lang-link {
-  padding: 0.25em 0.5em;
-  margin-left: 0.5em;
-  background-color: transparent;
-  color: var(--primary);
-  cursor: pointer;
-}
-
-/* Nav Links */
-.main-header__nav-link {
-  padding: 0.25em 0.5em;
-  background-color: transparent;
-  margin: 0 2vw;
-  color: var(--primary);
-}
-
-/* photo background */
-.issue {
-  background-size: cover;
-  background-image: url("https://ejournal.fahd39.com/public/site/images/adminjurnal/background-1.png");
-}
-
-.issue .container {
+header#headerNavigationContainer {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10rem;
+  background-color: #01A7DF;
 }
 
-.issue-desc__content {
-  text-align: justify;
-}
-
-.issue__title {
-  text-align: center;
-  color: var(--primary);
-}
-
-.issue__meta {
-  text-align: center;
-}
-
-.issue-desc {
+.container-fluid {
+  margin-right: unset;
+  margin-left: unset;
   display: flex;
-  justify-content: center;
 }
 
-.offset-md-4 {
-  margin-left: 0%;
-  text-align: justify;
+.container-fluid:nth-child(1) {}
+
+.container-fluid:nth-child(2) {
   width: 100%;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-/* Tombol */
-.article__btn {
-  margin-right: 2vw;
-  font-size: 0.875rem;
-  padding: 10px 25px;
-  border-radius: 8px;
-  border: 1px solid #000;
-  color: #000;
-  background-color: #f9f9f9;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  font-weight: 600;
-  cursor: pointer;
-  letter-spacing: 0.5px;
+@media (max-width: 768px) {
+  .container-fluid:nth-child(2) {
+    justify-content: start;
+  }
+
 }
 
-.article__btn:hover {
-  background-color: #000;
-  color: #fff;
-  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-.article__btn:active {
-  transform: scale(0.98);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Teks */
-.issue__header p {
-  color: lightgrey;
-}
-
-.issue-desc__title {
-  color: var(--primary);
-  margin-top: 0;
-}
-
-.issue-desc__content a {
-  color: lightgray;
-  padding-left: 5px;
-}
-
-.issue-desc__content p {
-  color: var(--primary);
-  padding-left: 5px;
-}
-
-.issue-desc__content a:hover {
-  color: var(--primary);
-}
-
-.issue-desc__content a:after {
-  color: var(--primary);
-}
-
-.issue-desc__content a .elipsis:after {
-  border-color: none;
-}
-
-a.ellipsis:after {
-  border-color: transparent;
-}
-
-.main-header__title span {
-  display: inline;
-  padding: 0.5rem;
-  background: transparent;
-  line-height: 1.5;
-  font-family: "Spectral", serif;
-  font-weight: 700;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-p,
-li,
-blockquote,
-cite,
-dd {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  color: #535353;
-}
-
-/* Footer */
-.main-footer {
-  background-color: var(--background-color);
-  color: var(--primary);
-}
-
-.main-footer a {
-  color: var(--primary);
-}
-
-.main-footer p {
-  margin-bottom: 5px;
-  color: var(--primary);
-}
-
-.main-footer img.img-fluid {
+.container-fluid:after {
   display: none;
 }
 
-/* Index img */
-.hover13 img {
-  border-radius: 10px;
-  max-width: none;
-  height: revert-layer;
+.nav>li>a {
+  display: flex;
+  align-items: center;
 }
 
-.hover13 img:hover {
-  border: 5px dotted #4682b4;
+a.navbar-brand {
+  font-weight: 500;
+  font-variant-caps: all-petite-caps;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  a.navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav.navbar-nav li a {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: 1275px) {
+  a.navbar-brand {
+    font-size: 40px;
+  }
+
+  .nav.navbar-nav li a {
+    font-size: 20px;
+  }
+
+
 }
 
 @media (min-width: 768px) {
-  .issue {
-    background-size: contain;
-  }
+  .navbar-form .form-group {}
+}
 
-  .offset-md-4 {
-    margin-left: 0%;
-    text-align: justify;
-    width: 100%;
+@media (min-width: 768px) {
+
+  .navbar>.container .navbar-brand,
+  .navbar>.container-fluid .navbar-brand,
+  .header_view>.container .navbar-brand,
+  .header_view>.container-fluid .navbar-brand {
+    margin-left: 0;
   }
 }
+
+.container>.navbar-header,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container-fluid>.navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-brand {
+  padding: unset;
+  font-size: unset;
+  line-height: 32px;
+}
+
+@media (max-width: 1275px) {
+  .navbar-brand {
+    line-height: 41px;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+h1.site-name {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus,
+.navbar-default .nav>li>a:active,
+.header_view .nav>li>a:hover,
+.header_view .nav>li>a:focus,
+.header_view .nav>li>a:active {
+  color: #fff;
+  background: #272727;
+  border-radius: 10px;
+}
+
+.navbar-form .form-group {
+  padding-right: 10px;
+}
+
+form.navbar-form.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+input.form-control {
+  border-radius: 10px;
+}
+
+button.btn.btn-default {
+  border-radius: 10px;
+}
+
+@media (max-width: 946px) {
+  .navbar-form .form-control {
+    width: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  a.navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 766px) {
+  nav#nav-menu {
+    position: absolute;
+    background: #01A7DF;
+    z-index: 1000;
+    top: 100px;
+  }
+}
+
+ul#navigationUser {
+  display: flex;
+}
+
+header#headerNavigationContainer::after {
+  background-image: url(https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/background-1.png);
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  height: 320px;
+  content: "";
+  position: absolute;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+}
+
+.pkp_structure_content.container {
+  margin-top: 70px;
+}
+
+.journal-description,
+header.page-header {
+  display: none;
+}
+
+
+.issue-details.col-md-8 {
+  background: #3A68BE;
+  border-radius: 15px;
+  text-align: justify;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  box-shadow: 2px 3px 10px #00000099;
+}
+
+p.current_issue_title.lead {
+  color: white;
+}
+
+.issue-details.col-md-8 a {
+  color: white;
+}
+
+@media (min-width: 992px) {
+
+  p.current_issue_title.lead {
+    position: relative;
+    left: 35%;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .issue-details.col-md-8 {
+    position: absolute;
+    left: 35%;
+    width: 721px;
+    color: white;
+  }
+
+  .issue-details.col-md-8 a {
+    color: white;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .issue-details.col-md-8 {
+    width: 873px;
+    top: 2%;
+  }
+}
+
+.thumbnail.col-md-4 {
+  background-color: transparent;
+  border: 0;
+}
+
+.issue-toc .section {
+  background: #3A68BE;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px #00000099;
+}
+
+.page-header {
+  margin: 0 0 21px;
+}
+
+.page-header small {
+  color: white;
+}
+
+.article-summary.media {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px #00000099;
+}
+
+.article-summary.media,
+.media-heading a {
+  background: #4091AE;
+  color: white;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #3A68BE;
+  border-color: #0079a1;
+  border-radius: 10px;
+
+}
+
+a.btn.btn-primary.read-more {
+  margin-top: 10px;
+  box-shadow: 2px 3px 10px #00000099;
+}
+
+aside#sidebar {
+  margin-top: 303px;
+  background: #3A68BE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px #00000099;
+}
+
+.pkp_block {
+  background: transparent;
+  border-color: transparent;
+}
+
+.pkp_block h2.title {
+  background: transparent;
+  color: white;
+  border-color: transparent;
+  text-align: center;
+}
+
+.pkp_block .content ul li {
+  background-color: #4091AE;
+  border-radius: 10px;
+  margin-top: 10px;
+  border-width: 0;
+  box-shadow: 2px 3px 10px #00000030;
+  text-align: center;
+}
+
+.pkp_block .content ul li a {
+  color: white;
+}
+
+.pkp_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_custom .content p a {
+  color: white;
+}
+
+footer.footer {
+  background: #29333F;
+  color: white;
+}
+
+footer.footer img.img-responsive {
+  display: none;
+}
+
+.pkp_block.block_custom div p a iframe,
+.pkp_block.block_custom div p a img {
+  max-width: -webkit-fill-available;
+}
+
+@media (max-width: 1200px) {
+  .issue-toc section.section {
+    margin-top: 44px;
+  }
+
+
+
+}
+
+@media (max-width: 991px) {
+  .pkp_structure_content.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading.row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  aside#sidebar {
+    margin-top: 20px;
+    width: 79.333333%
+  }
+}
+
+@media (max-width: 767px) {
+  aside#sidebar {
+    width: 96%
+  }
+}
+
+.pkp_page_focusandscope .pkp_structure_main,
+.pkp_page_ReviewesBoard .pkp_structure_main,
+.pkp_page_PublicationEthics .pkp_structure_main,
+.pkp_page_ArticleProcessingCharge .pkp_structure_main,
+.pkp_page_PEERREVIEWPROCESS .pkp_structure_main,
+.pkp_page_indexingjournal .pkp_structure_main,
+.pkp_page_PlagiarismScreening .pkp_structure_main,
+.pkp_page_ISSN .pkp_structure_main,
+.pkp_page_about .pkp_structure_main,
+.pkp_page_article .pkp_structure_main,
+.pkp_page_search .pkp_structure_main,
+.page.page_issue_archive {
+  position: relative;
+  top: 170px;
+}
+
+.pkp_page_focusandscope aside#sidebar,
+.pkp_page_ReviewesBoard aside#sidebar,
+.pkp_page_PublicationEthics aside#sidebar,
+.pkp_page_ArticleProcessingCharge aside#sidebar,
+.pkp_page_PEERREVIEWPROCESS aside#sidebar,
+.pkp_page_indexingjournal aside#sidebar,
+.pkp_page_PlagiarismScreening aside#sidebar,
+.pkp_page_ISSN aside#sidebar,
+.pkp_page_about aside#sidebar,
+.pkp_page_article aside#sidebar,  
+.pkp_page_search aside#sidebar,
+.pkp_page_issue.pkp_op_archive aside#sidebar {
+  margin-top: 169px;
+}
+
+
+/* ==ADDITIONAL PAGE== */
+/* Wrapper utama */
+.fee-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  background: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--tertiary-light);
+}
+
+/* Judul halaman */
+.fee-container h2 {
+  text-align: center;
+  color: var(--background-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Daftar biaya */
+.fee-list p {
+  background: var(--primary-light);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 6px;
+  border-left: 4px solid var(--background-color);
+}
+
+/* Biaya penting */
+.fee-list p strong {
+  color: #b22222;
+  font-size: 1.05rem;
+}
+
+/* Deskripsi */
+.fee-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: var(--primary-dark);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+/* Gambar */
+.fee-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .fee-container {
+    padding: 1rem;
+  }
+
+  .fee-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .fee-list p {
+    font-size: 0.9rem;
+  }
+}
+
+/* == END OF ADDITIONAL PAGE== */
