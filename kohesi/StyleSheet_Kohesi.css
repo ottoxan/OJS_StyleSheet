@@ -81,7 +81,7 @@
 /* photo background */
 .issue {
   background-size: cover;
-  background-image: url("http://localhost/journal.cib.institute/public/site/images/adminjurnal/bg.png");
+  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/kohesi-bg.png");
 }
 
 .issue .container {
@@ -120,6 +120,10 @@
 }
 /* End of Container Deskripsi */
 
+.article-page {
+  background-color: var(--primary);
+}
+
 .issue-desc__content {
   text-align: justify;
 }
@@ -144,8 +148,18 @@
   width: 100%;
 }
 
+.article-page {
+  color: var(--secondary);
+}
+
+.article-page a,
+.article-page__meta {
+  color: var(--sub-text);
+}
+
 /* Tombol */
-.article__btn {
+.article__btn,
+.list-galleys a {
   margin-right: 2vw;
   font-size: 0.875rem;
   padding: 10px 25px;
@@ -160,7 +174,12 @@
   letter-spacing: 0.5px;
 }
 
-.article__btn:hover {
+.article-page p {
+    text-align: justify;
+}
+
+.article__btn:hover,
+.list-galleys a:hover {
   background-color: var(--background-color);
   color: var(--primary);
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.2);
@@ -222,6 +241,14 @@ a.ellipsis:after {
   font-weight: 700;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+.main-header__title a span {
+    color: var(--primary);
+}
+
+.main-header__title a span:hover {
+  color: var(--tertiary);
 }
 
 p,

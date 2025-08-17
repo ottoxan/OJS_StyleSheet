@@ -204,8 +204,17 @@ a {
   max-width: 100%;
 }
 
-.description p {
+.description p,
+section.item.abstract p {
   text-align: justify;
+}
+
+.obj_article_details .galleys_links {
+    justify-content: center;
+}
+
+.obj_article_details .galleys_links li {
+  margin-inline-end: 0;
 }
 
 .obj_issue_toc > .galleys h2,

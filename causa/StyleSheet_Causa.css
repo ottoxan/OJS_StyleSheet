@@ -68,6 +68,7 @@ svg.w-12.h-12.text-sky-400 {
   color: var(--primary);
 }
 
+a.text-sky-400.break-words,
 a.title.text-sky-400 {
   color: var(--sub-text);
 }

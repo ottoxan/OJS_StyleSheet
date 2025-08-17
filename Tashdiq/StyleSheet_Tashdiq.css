@@ -239,6 +239,10 @@ span.navbar-logo-text:active {
 .issue-summary {
   background: none;
 }
+
+.article-summary-pages.text-right {
+  text-align: right;
+}
 /* === END OF BODY === */
 
 /* === FOOTER === */
