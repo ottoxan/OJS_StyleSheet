@@ -1,0 +1,499 @@
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo {
+  /* Warna Utama (Teks / elemen putih agar kontras dengan background oranye-merah) */
+  --primary: #ffffff;
+  --primary-light: #f5f5f5;
+  --primary-dark: #e0e0e0;
+
+  /* Warna Sekunder (Netral gelap untuk teks di permukaan terang) */
+  --secondary: #1f1f1f;
+  --secondary-light: #535353;
+  --secondary-dark: #000000;
+
+  /* Warna Tersier (Abu-abu netral) */
+  --tertiary: #1f3a60;
+  --tertiary-light: #cfcfcf;
+  --tertiary-dark: #707070;
+
+  /* Warna Aksen (Kuning keemasan untuk kontras cerah) */
+  --accent: #ffd369;
+  --accent-light: #ffe7a1;
+  --accent-dark: #e6b94e;
+
+  /* Warna Latar Belakang */
+  --background-color: #ee4d2d; /* Oranye-merah utama */
+  --background-color-light: #f36f55; /* Lebih terang */
+  --background-color-dark: #c63d22; /* Lebih gelap */
+
+  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+  z-index: 0;
+}
+
+/* Versi dark mode */
+.dark {
+  /* Warna Utama (Teks putih tetap agar terbaca) */
+  --primary: #ffffff;
+  --primary-light: #e0e0e0;
+  --primary-dark: #bdbdbd;
+
+  /* Warna Sekunder (Abu-abu terang untuk teks sekunder) */
+  --secondary: #a0a0a0;
+  --secondary-light: #c0c0c0;
+  --secondary-dark: #707070;
+
+  /* Warna Tersier (Hitam pekat untuk elemen dasar) */
+  --tertiary: #000000;
+  --tertiary-light: #222222;
+  --tertiary-dark: #111111;
+
+  /* Warna Aksen (Kuning agar tetap kontras di gelap) */
+  --accent: #ffc857;
+  --accent-light: #ffd88a;
+  --accent-dark: #e6b24d;
+
+  /* Warna Latar Belakang */
+  --background-color: #121212; /* Hitam gelap */
+  --background-color-light: #1e1e1e; /* Abu gelap */
+  --background-color-dark: #0a0a0a; /* Hampir hitam */
+
+  /* Aksen Oranye-Merah tetap dipertahankan */
+  --highlight: #ee4d2d; /* warna brand utama */
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* Ubah opasitas sesuai kebutuhan */
+  /* z-index: 1; */
+  pointer-events: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo > * {
+  position: relative;
+  /* z-index: 2; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header menu */
+header.sticky.top-0.z-50.flex.flex-none.flex-wrap.items-center.justify-between.bg-white.px-4.py-5.shadow-md.shadow-slate-900\/5.transition.duration-500.sm\:px-6.lg\:px-8.dark\:shadow-none.dark\:bg-slate-900\/95.dark\:backdrop-blur.dark\:\[\@supports\(backdrop-filter\:blur\(0\)\)\]\:bg-slate-900\/75 {
+  background-color: var(--background-color);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .dark\:\[\@supports\(backdrop-filter\:blur\(0\)\)\]\:bg-slate-900\/75:is(
+    .dark *
+  ) {
+  background-color: rgb(15 23 42 / 0.75) !important;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.flex.h-8.items-center.text-slate-500.justify-center.rounded-xl.shadow-md.shadow-black\/5.ring-1.ring-black\/5.px-3.text-sm,
+.ring-black\/5 {
+  color: var(--primary);
+  background-color: var(--quaternary);
+}
+
+/* Dark mode override pakai variabel otomatis */
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.flex.h-8.items-center.text-slate-500.justify-center.rounded-xl.shadow-md.shadow-black\/5.ring-1.ring-black\/5.px-3.text-sm,
+.ring-black\/5 {
+  background-color: var(--quaternary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  header
+  .relative.flex.flex-grow.basis-0.items-center
+  a
+  img.img-fluid {
+  max-width: 40px !important;
+}
+
+/* svg icon */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  svg.w-8.h-8.text-sky-400,
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  svg.w-12.h-12.text-sky-400 {
+  display: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .fill-sky-400 {
+  fill: var(--primary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .text-sky-400 {
+  color: var(--primary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.text-sky-400.break-words,
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.title.text-sky-400 {
+  color: var(--sub-text);
+}
+
+/* Button */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500 {
+  background-color: var(--background-color);
+  color: var(--secondary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.rounded-full.bg-slate-800.py-2.px-4.text-sm.font-medium.text-white.hover\:bg-slate-700.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-white\/50.active\:text-slate-400 {
+  background-color: var(--quaternary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500:hover {
+  background-color: var(--quaternary);
+  color: var(--primary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  a.rounded-full.bg-slate-800.py-2.px-4.text-sm.font-medium.text-white.hover\:bg-slate-700.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-white\/50.active\:text-slate-400:hover {
+  background-color: var(--background-color);
+  color: var(--secondary);
+}
+/* == END OF NAVBAR == */
+
+/* == CONTENT == */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .dark\:block:is(.dark *) {
+  display: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .prose
+  :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  text-align: center;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .prose
+  :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  text-decoration: none;
+  color: var(--tertiary);
+  font-weight: 600;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .dark\:prose-a\:text-sky-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity, 1))!important;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .relative.mx-auto.flex.w-full.max-w-8xl.flex-auto.justify-center.sm\:px-2.lg\:px-8.xl\:px-12 {
+  margin: 0;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  main.min-w-0.max-w-2xl.flex-auto.px-4.py-16.lg\:max-w-none.lg\:pl-8.lg\:pr-0.xl\:px-16.dark\:text-white {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  li.has_thumb {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.596);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  height: 400px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  li.has_thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .thumb {
+  max-width: 200px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .thumb
+  img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  h3 {
+  margin: 0 0 1rem 0;
+  font-size: 14px;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .description {
+  margin-bottom: 1rem;
+  font-size: 11px;
+  text-align: justify;
+  color: var(--secondary-dark);
+  flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding: 0;
+  list-style: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .links
+  a {
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border-radius: 0.25rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 11px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .links
+  a:hover {
+  background: #e0e0e0;
+}
+
+/* Dark mode styles */
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  li.has_thumb {
+  background-color: rgb(15 23 42 / 0.75) !important;
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .description {
+  color: #94a3b8;
+}
+
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .links
+  a {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .journals
+  .links
+  a:hover {
+  background: #475569;
+}
+
+/* Sidebar */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .hidden.xl\:sticky.xl\:top-\[4\.75rem\].xl\:-mr-6.xl\:block.xl\:h-\[calc\(100vh-4\.75rem\)\].xl\:flex-none.overflow-y-auto.overflow-x-hidden.xl\:py-16.xl\:pr-6.scrollbar-thin.scrollbar-thumb-gray-400.scrollbar-track-gray-200.dark\:scrollbar-thumb-gray-600.dark\:scrollbar-track-gray-800 {
+  display: none;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .absolute.inset-y-0.right-0.w-\[50vw\].bg-slate-50.dark\:hidden {
+  background: none;
+}
+
+/* == FOOTER == */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .footer {
+  background-color: var(--background-color) !important;
+  padding: 0 20px 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .footer {
+  background-color: rgb(15 23 42 / 0.75) !important;
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .footer-bottom {
+  padding: 10px 0;
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .footer-bottom
+  p {
+  font-weight: 600;
+  text-align: left;
+  color: var(--sub-text);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .text-slate-500 {
+  color: var(--primary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .footer
+  .text-sm {
+  display: none;
+}
+/* == END OF FOOTER == */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    h3 {
+    text-align: center;
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    ul {
+    grid-template-columns: 1fr;
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    li.has_thumb {
+    margin: 0 10px 0 10px;
+    flex-direction: column;
+    height: auto;
+    min-height: 220px;
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    .thumb {
+    max-width: 40%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--background-color);
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    .body {
+    padding: 1rem;
+    overflow: visible;
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    .links {
+    align-self: center;
+  }
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    .thumb {
+    max-width: 150px;
+  }
+}
