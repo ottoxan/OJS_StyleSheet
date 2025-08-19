@@ -170,6 +170,11 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
 /* == END OF NAVBAR == */
 
 /* == CONTENT == */
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .relative.mx-auto.flex.w-full.max-w-8xl.flex-auto.justify-center.sm\:px-2.lg\:px-8.xl\:px-12 {
+  max-width: 2200px;
+  margin: auto!important;
+}
+
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   .dark\:block:is(.dark *) {
   display: none;
@@ -495,5 +500,13 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
     .journals
     .thumb {
     max-width: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+    .journals
+    ul {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
