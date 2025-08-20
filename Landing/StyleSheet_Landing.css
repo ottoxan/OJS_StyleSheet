@@ -121,32 +121,32 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
 
 /* svg icon */
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  svg.w-8.h-8.text-sky-400,
+  svg.w-8.h-8.text-orange-400,
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  svg.w-12.h-12.text-sky-400 {
+  svg.w-12.h-12.text-orange-400 {
   display: none;
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  .fill-sky-400 {
+  .fill-orange-400 {
   fill: var(--primary);
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  .text-sky-400 {
+  .text-orange-400 {
   color: var(--primary);
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  a.text-sky-400.break-words,
+  a.text-orange-400.break-words,
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  a.title.text-sky-400 {
+  a.title.text-orange-400 {
   color: var(--sub-text);
 }
 
 /* Button */
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500 {
+  a.rounded-full.bg-orange-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-orange-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-orange-300\/50.active\:bg-orange-500 {
   background-color: var(--background-color);
   color: var(--secondary);
 }
@@ -157,7 +157,7 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500:hover {
+  a.rounded-full.bg-orange-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-orange-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-orange-300\/50.active\:bg-orange-500:hover {
   background-color: var(--quaternary);
   color: var(--primary);
 }
@@ -180,6 +180,11 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   display: none;
 }
 
+body.bg-white.dark\:bg-slate-900.pkp_page_login.pkp_op_index.has_site_logo img.img-fluid {
+    max-width: 80px !important;
+    margin: 20px 20px 0 20px;
+}
+
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   .prose
   :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
@@ -196,7 +201,7 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   font-weight: 600;
 }
 
-body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .dark\:prose-a\:text-sky-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .dark\:prose-a\:text-orange-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(56 189 248 / var(--tw-text-opacity, 1))!important;
 }
