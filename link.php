@@ -1,0 +1,9 @@
+logo: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/logo.png
+issn: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/issn-8f4f7f449185147841056cfad4d054d3.png
+mendeley: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/mendeley.png
+turnitin: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/turnitin.jpg
+scholar: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/scholar.png
+garuda: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/garuda.png
+copernicus: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/copernicus.png
+grafik: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/grafik.png
+pdf: https://ejournal.cibinstitute.com/public/site/images/cibinstitute/pdfdownload.png

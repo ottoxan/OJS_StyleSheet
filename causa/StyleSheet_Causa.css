@@ -26,7 +26,7 @@ body {
 
 /* Header */
 .bg-slate-900 {
-  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/causa-bg.png");
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/causa-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -55,26 +55,26 @@ a.flex.h-8.items-center.text-slate-500.justify-center.rounded-xl.shadow-md.shado
 }
 
 /* svg icon */
-svg.w-8.h-8.text-sky-400,
-svg.w-12.h-12.text-sky-400 {
+svg.w-8.h-8.text-orange-400,
+svg.w-12.h-12.text-orange-400 {
   display: none;
 }
 
-.fill-sky-400 {
+.fill-orange-400 {
   fill: var(--primary);
 }
 
-.text-sky-400 {
+.text-orange-400 {
   color: var(--primary);
 }
 
-a.text-sky-400.break-words,
-a.title.text-sky-400 {
+a.text-orange-400.break-words,
+a.title.text-orange-400 {
   color: var(--sub-text);
 }
 
 /* Button */
-a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500 {
+a.rounded-full.bg-orange-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-orange-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-orange-300\/50.active\:bg-orange-500 {
   background-color: var(--background-color);
   color: var(--secondary);
 }
@@ -83,7 +83,7 @@ a.rounded-full.bg-slate-800.py-2.px-4.text-sm.font-medium.text-white.hover\:bg-s
   background-color: var(--quaternary);
 }
 
-a.rounded-full.bg-sky-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-sky-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-sky-300\/50.active\:bg-sky-500:hover {
+a.rounded-full.bg-orange-300.py-2.px-4.text-sm.font-semibold.text-slate-900.hover\:bg-orange-200.focus\:outline-none.focus-visible\:outline-2.focus-visible\:outline-offset-2.focus-visible\:outline-orange-300\/50.active\:bg-orange-500:hover {
   background-color: var(--quaternary);
   color: var(--primary);
 }
@@ -130,7 +130,7 @@ main.min-w-0.max-w-2xl.flex-auto.px-4.py-16.lg\:max-w-none.lg\:pl-8.lg\:pr-0.xl\
   padding-bottom: 3rem;
 }
 
-.prose :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+.prose :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   margin-top: 0;
 }
 
@@ -146,7 +146,7 @@ img.aspect-square.lg\:aspect-auto.w-full.border.border-slate-100.dark\:border-sl
   text-align: justify;
 }
 
-.prose-a\:text-sky-400
+.prose-a\:text-orange-400
   :is(:where(a):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
   color: var(--quaternary);
   text-decoration: none;
@@ -157,7 +157,7 @@ h2.title.pkp_screen_reader {
 }
 
 .flex.md\:space-x-4 .flex-1 .flex.space-x-2 {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 {
@@ -229,6 +229,8 @@ ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 
   border-radius: 10px;
   backdrop-filter: blur(5px);
   transition: transform 0.3s ease;
+  justify-content: center;
+  display: grid;
 }
 
 .footer-box:hover {
@@ -428,6 +430,10 @@ ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 
     display: none;
   }
 
+  li.pkp_block.block_custom {
+    display: none;
+  }
+
   .side-issn-item {
     display: none;
   }
@@ -457,6 +463,8 @@ ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 
     border-radius: 10px;
     backdrop-filter: blur(5px);
     transition: transform 0.3s ease;
+    justify-content: center;
+    display: grid;
   }
 
   .footer-box-issn:hover {

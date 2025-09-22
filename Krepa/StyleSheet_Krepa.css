@@ -30,7 +30,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap");
 
 html {
-  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/krepa-bg.png");
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/krepa-bg.png");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ a {
 }
 
 .pkp_site_name_wrapper {
-  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/krepa.png");
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/krepa.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 300px;
@@ -537,6 +537,15 @@ section.item.abstract p {
 /*=== End of Footer ===*/
 
 /* ==ADDITIONAL PAGE== */
+/* Konten pdf&grafik */
+.meta img {
+  content: url(https://ejournal.cibinstitute.com/public/site/images/cibinstitute/pdfdownload.png);
+}
+
+.galleys_links img {
+    content: url(https://ejournal.cibinstitute.com/public/site/images/cibinstitute/grafik.png);
+}
+
 /* Wrapper utama */
 .fee-container {
   max-width: 900px;

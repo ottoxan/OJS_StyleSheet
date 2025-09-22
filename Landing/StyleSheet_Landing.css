@@ -24,7 +24,7 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo {
   --background-color-light: #f36f55; /* Lebih terang */
   --background-color-dark: #c63d22; /* Lebih gelap */
 
-  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/home-bg.jpg");
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/home-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -170,9 +170,10 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
 /* == END OF NAVBAR == */
 
 /* == CONTENT == */
-body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .relative.mx-auto.flex.w-full.max-w-8xl.flex-auto.justify-center.sm\:px-2.lg\:px-8.xl\:px-12 {
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .relative.mx-auto.flex.w-full.max-w-8xl.flex-auto.justify-center.sm\:px-2.lg\:px-8.xl\:px-12 {
   max-width: 2200px;
-  margin: auto!important;
+  margin: auto !important;
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
@@ -180,9 +181,10 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   display: none;
 }
 
-body.bg-white.dark\:bg-slate-900.pkp_page_login.pkp_op_index.has_site_logo img.img-fluid {
-    max-width: 80px !important;
-    margin: 20px 20px 0 20px;
+body.bg-white.dark\:bg-slate-900.pkp_page_login.pkp_op_index.has_site_logo
+  img.img-fluid {
+  max-width: 80px !important;
+  margin: 20px 20px 0 20px;
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
@@ -201,9 +203,13 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
   font-weight: 600;
 }
 
-body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo .dark\:prose-a\:text-orange-400 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  .dark\:prose-a\:text-orange-400
+  :is(:where(a):not(:where([class~="not-prose"], [class~="not-prose"] *))):is(
+    .dark *
+  ) {
   --tw-text-opacity: 1;
-  color: rgb(56 189 248 / var(--tw-text-opacity, 1))!important;
+  color: rgb(56 189 248 / var(--tw-text-opacity, 1)) !important;
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
@@ -429,8 +435,16 @@ body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
-  .text-slate-500 {
+  footer.footer.bg-slate-50.py-5.bottom-0.text-slate-400.dark\:bg-transparent
+  p {
   color: var(--primary);
+}
+
+body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo
+  footer.footer.bg-slate-50.py-5.bottom-0.text-slate-400.dark\:bg-transparent
+  p:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
 }
 
 body.bg-white.dark\:bg-slate-900.pkp_page_index.pkp_op_index.has_site_logo

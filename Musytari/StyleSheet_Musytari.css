@@ -96,7 +96,7 @@ blockquote,
 .current_issue header,
 h1.text-left.issue-header {
   padding: 130px 12%;
-  background-image: url("https://ejournal.cahayailmubangsa.institute/public/site/images/adminjurnal/musytari.png");
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/musytari.png");
   margin-bottom: 50px;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -349,8 +349,7 @@ a.read_more.btn.btn-secondary {
 /*=== ADDITIONAL PAGE ===*/
 .page_register .container-fluid.container-page.container-narrow,
 .page_login .container-fluid.container-page.container-narrow,
-main.page.page_issue_archive,
-.page_search, .page_article {
+main.page {
   padding: 50px 12%;
 }
 
