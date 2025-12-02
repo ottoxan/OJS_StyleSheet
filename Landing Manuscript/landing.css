@@ -293,13 +293,40 @@ body.pkp_page_index.pkp_op_index.has_site_logo .pkp_brand_footer {
 
 /* Stack vertically on small screens */
 @media (max-width: 599px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .pkp_site_name .is_img img {
+    max-height: 30px;
+  }
+
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals .thumb img {
+    display: flex;
+    margin: 10px auto;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+  }
+
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals h3 {
+    text-align: center;
+  }
+
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals .links {
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  body.pkp_page_index.pkp_op_index.has_site_logo .page_index_site {
+    padding: 0;
+  }
+
   body.pkp_page_index.pkp_op_index.has_site_logo .journals ul li {
     flex-direction: column;
     padding: 12px 12px 8px 12px;
   }
-}
 
-@media (max-width: 599px) {
   body.pkp_page_index.pkp_op_index.has_site_logo .journals .thumb {
     width: 100%;
     max-width: none;
