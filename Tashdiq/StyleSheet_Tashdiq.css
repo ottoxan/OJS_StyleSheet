@@ -184,10 +184,8 @@ span.navbar-logo-text:active {
 }
 
 /* container description */
-.col-lg-10,
-.col-lg-9 {
-  align-items: center;
-  display: flex;
+.article-details-block.article-details-abstract {
+  text-align: justify;
 }
 
 .homepage-issue-description-wrapper {
