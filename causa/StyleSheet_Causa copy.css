@@ -389,6 +389,7 @@ ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 
   border-radius: 8px;
 }
 
+/* Old */
 .hero-section {
   background: linear-gradient(rgba(0,0,0,0.185), rgba(0,0,0,0.185)), url(https://ejournal.warunayama.org/public/journals/10/homepageImage_en_US.png);
   background-attachment: fixed;
@@ -397,7 +398,6 @@ ul.list-none.flex.flex-wrap.justify-end.space-x-2.m-0.p-0.text-xs.text-blue-600 
   background-size: cover;
 }
 
-/* Old */
 #header.header-scrolled {
   background: rgba(255, 166, 0, 0.493);
 }
