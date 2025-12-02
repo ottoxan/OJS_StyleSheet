@@ -1,0 +1,308 @@
+body.pkp_page_index.pkp_op_index.has_site_logo {
+  /* Warna Utama (Teks / elemen putih agar kontras dengan background oranye-merah) */
+  --primary: #ffffff;
+  --primary-light: #f5f5f5;
+  --primary-dark: #e0e0e0;
+
+  /* Warna Sekunder (Netral gelap untuk teks di permukaan terang) */
+  --secondary: #1f1f1f;
+  --secondary-light: #535353;
+  --secondary-dark: #000000;
+
+  /* Warna Tersier (Abu-abu netral) */
+  --tertiary: #1f3a60;
+  --tertiary-light: #cfcfcf;
+  --tertiary-dark: #707070;
+
+  /* Warna Aksen (Kuning keemasan untuk kontras cerah) */
+  --accent: #ffd369;
+  --accent-light: #ffe7a1;
+  --accent-dark: #e6b94e;
+
+  /* Warna Latar Belakang */
+  --background-color: #ee4d2d; /* Oranye-merah utama */
+  --background-color-light: #f36f55; /* Lebih terang */
+  --background-color-dark: #c63d22; /* Lebih gelap */
+}
+
+/* Replace previous centering that used margin:0 auto — make containers full-width with internal gutters */
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_site_name_wrapper,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_primary_wrapper,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_user,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_search_mobile,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_content,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_footer {
+  margin: 0; /* do not center the box itself with auto margins */
+  width: 100%; /* span full width */
+  max-width: none; /* remove the fixed max-width that caused side gaps */
+  padding: 0 20px; /* internal gutters on both sides */
+  box-sizing: border-box;
+}
+
+/* Keep interior alignment centered using flex on the navigation wrappers */
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_primary_wrapper,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_user,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_search_mobile {
+  display: flex;
+  justify-content: center; /* center the items inside the full-width bar */
+  align-items: center;
+  gap: 16px;
+}
+
+/* Prevent child elements from bringing back unwanted margins */
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_site_name_wrapper > *,
+body.pkp_page_index.pkp_op_index.has_site_logo
+  .pkp_navigation_primary_wrapper
+  > *,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_user > *,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_search_mobile > * {
+  margin: 0;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_site_name .is_text,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_navigation_user > li > a {
+  color: var(--primary);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_site_name .is_img img {
+  max-height: 40px;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo a {
+  color: var(--tertiary);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_page {
+  max-width: 100%;
+  margin: 0;
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow: none;
+  position: relative; /* create stacking context for overlay */
+  z-index: 0;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_page::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* adjust opacity to make background darker/lighter */
+  pointer-events: none; /* allow clicks through to content */
+  z-index: 1;
+}
+
+/* Ensure main regions render above the overlay */
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_head,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_main,
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_footer_wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make .pkp_structure_main span full width but center its inner content */
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_main {
+  margin: 0; /* remove external margins */
+  width: 100%; /* span full viewport width */
+  box-sizing: border-box;
+  padding: 0 20px 24px 20px; /* internal horizontal gutters and bottom padding */
+  display: flex; /* center inner content */
+  justify-content: center; /* horizontally center the child (.page_index_site) */
+}
+
+/* Constrain the inner content so it stays centered and doesn't stretch too wide */
+body.pkp_page_index.pkp_op_index.has_site_logo
+  .pkp_structure_main
+  > .page_index_site {
+  width: 100%;
+  max-width: 1200px; /* adjust as needed */
+  box-sizing: border-box;
+}
+
+/* Constrain page content and add horizontal padding so cards don't touch screen edges */
+body.pkp_page_index.pkp_op_index.has_site_logo .page_index_site {
+  max-width: 1200px; /* adjust as needed */
+  margin: 0;
+  padding: 0 40px 40px; /* larger horizontal gutter on both sides */
+  box-sizing: border-box;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals ul li {
+  background: rgba(255, 255, 255, 0.596);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 14px;
+  transition: transform 0.2s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .links li.view,
+body.pkp_page_index.pkp_op_index.has_site_logo .links li.current {
+  padding: 2px;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .links li.view:hover,
+body.pkp_page_index.pkp_op_index.has_site_logo .links li.current:hover {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals {
+  margin-top: 6.2rem;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals ul ul.links {
+  padding-top: 20px;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(22, 28, 37, 0.09);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .thumb {
+  flex: 0 0 140px;
+  max-width: 140px;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .body {
+  flex: 1 1 auto;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .description {
+  color: var(--secondary-dark);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-height: 8.2em;
+  overflow: hidden;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .links {
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .journals .links a {
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border-radius: 0.25rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 11px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+}
+
+/* Accessibility: focus visible */
+body.pkp_page_index.pkp_op_index.has_site_logo .journals a:focus {
+  outline: 3px solid rgba(11, 94, 215, 0.18);
+  outline-offset: 2px;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_footer_wrapper {
+  background: var(--background-color);
+  border-top: 1px solid #ddd;
+  border-bottom: 1.43rem solid var(--background-color-dark);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_footer_content {
+  padding: 0.2rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_brand_footer img {
+  display: none;
+}
+
+body.pkp_page_index.pkp_op_index.has_site_logo .pkp_brand_footer {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals ul {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 86px;
+    row-gap: 24px;
+  }
+}
+
+/* Responsive gutters for narrower screens */
+@media (max-width: 900px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .page_index_site {
+    padding: 0 28px;
+  }
+  body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_main {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .page_index_site {
+    padding: 0 12px;
+  }
+  body.pkp_page_index.pkp_op_index.has_site_logo .pkp_structure_main {
+    padding: 0 10px;
+  }
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 599px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals ul li {
+    flex-direction: column;
+    padding: 12px 12px 8px 12px;
+  }
+}
+
+@media (max-width: 599px) {
+  body.pkp_page_index.pkp_op_index.has_site_logo .journals .thumb {
+    width: 100%;
+    max-width: none;
+    flex: none;
+  }
+}

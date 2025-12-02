@@ -1,0 +1,590 @@
+:root {
+  /* Warna Utama (Putih untuk teks utama di background gelap) */
+  --primary: #ffffff;
+  --primary-light: #f5f5f5;
+  --primary-dark: #e0e0e0;
+
+  /* Warna Sekunder (Hijau lebih terang) */
+  --secondary: #2e7d32; /* Hijau sedang */
+  --secondary-light: #4caf50; /* Hijau cerah */
+  --secondary-dark: #1b5e20; /* Hijau pekat */
+  --secondary-bright: #e9ffeb; /* Hijau lebih cerah */
+
+  /* Warna Tersier (Hitam Netral) */
+  --tertiary: #000000;
+  --tertiary-light: #535353;
+  --tertiary-dark: #333333;
+
+  /* Warna Aksen (Kuning Emas untuk kontras) */
+  --accent: #ffc857;
+  --accent-light: #ffd88a;
+  --accent-dark: #e6b24d;
+
+  /* Warna Latar Belakang */
+  --background-color: #0a2f0e; /* Hijau gelap */
+  --background-color-light: #144d1a; /* Hijau lebih terang */
+  --background-color-dark: #061f09; /* Hampir hitam kehijauan */
+}
+
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--tertiary-dark);
+  background-color: var(--primary-dark);
+}
+
+/* Header Styles */
+.main-header {
+  background-image: url("https://ejournal.cibinstitute.com/public/site/images/cibinstitute/hibrida-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--primary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+#userNav .nav-link,
+.language-toggle .dropdown-toggle {
+  color: var(--primary-dark);
+  transition: all 0.3s ease;
+}
+
+#userNav .nav-link:hover,
+#userNav .nav-link:focus,
+#userNav .nav-link:active,
+.language-toggle
+  .dropdown-toggle:hover
+  .language-toggle
+  .dropdown-toggle:focus
+  .language-toggle
+  .dropdown-toggle:active {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.navbar-logo-text {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--primary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar-logo-text:hover {
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  border: 1px solid var(--primary);
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .dropdown-item {
+  color: var(--primary-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .dropdown-item:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .dropdown-item:focus {
+  background: none;
+  color: var(--primary-dark);
+}
+
+#primaryNav .nav-link:hover,
+#primaryNav .nav-link:focus {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+#primaryNav .dropdown-menu.show {
+  background-color: var(--background-color-light);
+  color: var(--primary-dark);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#primaryNav .dropdown-item {
+  font-size: 14px;
+  color: var(--primary-dark);
+  text-align: center;
+  width: initial;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+#primaryNav .dropdown-item:hover {
+  background: none;
+  color: var(--primary);
+}
+
+/* Current Issue Section */
+.container-homepage-issue {
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.homepage-issue-header {
+  padding: 20px;
+  background-color: var(--secondary-bright);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.homepage-issue-description-wrapper {
+  background: none;
+}
+
+.homepage-issue-description:after {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    var(--secondary-bright) 20%
+  );
+}
+
+.homepage-issue-current {
+  color: var(--background-color-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: right;
+  margin-top: 0!important;
+}
+
+.homepage-issue-identifier {
+  font-weight: 700;
+  color: var(--tertiary-dark);
+  margin: 0.5rem 0;
+  text-align: right;
+}
+
+.homepage-issue-published {
+  color: var(--tertiary-light);
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.homepage-issue-cover {
+  margin-top: 48px;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.homepage-issue-cover:hover {
+  transform: scale(1.03);
+}
+
+.homepage-issue-description h2 {
+  color: var(--background-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.homepage-issue-description p {
+  text-align: justify;
+  color: var(--tertiary-light);
+  margin-bottom: 1.5rem;
+}
+
+.homepage-issue-description-more a {
+  color: var(--background-color-light);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.homepage-issue-description-more a:hover {
+  color: var(--background-color);
+  text-decoration: underline;
+}
+
+/* Articles List Styles */
+.issue-toc-section-title {
+  color: var(--background-color);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.article-summary {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--secondary-bright);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.article-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-summary-authors {
+  color: var(--tertiary-light);
+  font-size: 0.9rem;
+}
+
+.article-summary-pages {
+  color: var(--tertiary-light);
+  font-size: 0.9rem;
+}
+
+.article-summary-title a {
+  color: var(--tertiary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.article-summary-title a:hover {
+  color: var(--background-color-light);
+}
+
+.text-center .btn {
+  border: 1px solid var(--tertiary-light);
+  color: var(--tertiary-light);
+}
+
+.text-center .btn:hover,
+.text-center .btn:focus,
+.text-center .btn:active {
+  border-color: var(--background-color);
+  color: var(--background-color);
+}
+
+.btn-primary {
+  background-color: var(--background-color-light);
+  border-color: var(--background-color-light);
+  color: var(--primary);
+  padding: 0.3rem 1rem;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--background-color-dark) !important;
+  border-color: var(--background-color-dark) !important;
+  color: var(--primary) !important;
+  transform: translateY(-2px);
+}
+
+.modal-content {
+  background-color: var(--background-color);
+}
+
+.modal-content .close {
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.modal-content .btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--background-color);
+}
+
+.modal-content .btn-primary:hover,
+.modal-content .btn-primary:focus,
+.modal-content .btn-primary:active {
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  color: var(--background-color) !important;
+}
+
+.form-text {
+  color: var(--primary-dark);
+}
+
+.issue-summary {
+  background: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background: linear-gradient(
+    135deg,
+    var(--background-color),
+    var(--background-color-light)
+  );
+  color: var(--primary);
+  padding: 3rem 0 2rem;
+}
+
+.site-footer a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.pk_block .title {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.site-footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand-image {
+  display: none;
+}
+
+.pkp_block .title {
+  font-size: 20px;
+}
+
+/* ==ADDITIONAL PAGE== */
+/* Wrapper utama */
+.fee-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+  background: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--tertiary-light);
+}
+
+/* Judul halaman */
+.fee-container h2 {
+  text-align: center;
+  color: var(--background-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Daftar biaya */
+.fee-list p {
+  background: var(--primary-light);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 6px;
+  border-left: 4px solid var(--background-color);
+}
+
+/* Biaya penting */
+.fee-list p strong {
+  color: #b22222;
+  font-size: 1.05rem;
+}
+
+/* Deskripsi */
+.fee-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: var(--primary-dark);
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+
+/* Gambar */
+.fee-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+/* Old */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .fee-container {
+    padding: 1rem;
+  }
+  .fee-container h2 {
+    font-size: 1.5rem;
+  }
+  .fee-list p {
+    font-size: 0.9rem;
+  }
+}
+/* == END OF ADDITIONAL PAGE== */
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-logo-text {
+    font-size: 1.2rem;
+  }
+
+  .homepage-issue-header {
+    flex-direction: column;
+  }
+
+  .homepage-issue-cover {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-homepage-issue,
+.issue-toc-section {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* === CUSTOM BLOCKS === */
+/* ISSN */
+.issn-item {
+  background-color: var(--primary);
+  border: 2px solid var(--primary-dark);
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.issn-item:hover {
+  transform: scale(1.05);
+}
+
+.issn-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Custom block containers */
+.index-container,
+.flag-container,
+.tools-container,
+.map-container {
+  background-color: var(--primary);
+  border: 2px solid var(--primary-dark);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  /* Centering Content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Index */
+.index-container a {
+  display: inline-block;
+  margin: 5px 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.index-container a:hover {
+  transform: scale(1.05);
+}
+
+.index-container img {
+  max-width: 100%;
+  max-height: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Tools */
+.tools-container:hover {
+  transform: translateY(-5px);
+}
+
+.tools-container p {
+  margin: 15px 0;
+}
+
+.tools-container a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tools-container a:hover {
+  transform: scale(1.05);
+}
+
+.tools-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Map */
+.map-container:hover {
+  transform: translateY(-5px);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Flag */
+.flag-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flag-container a:hover img {
+  transform: scale(1.03);
+}
+/* === END OF CUSTOM BLOCKS ===  */
